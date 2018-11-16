@@ -1,0 +1,64 @@
+[gd_scene load_steps=4 format=1]
+
+[ext_resource path="res://Result.gd" type="Script" id=1]
+[ext_resource path="res://PNG/win.png" type="Texture" id=2]
+[ext_resource path="res://Fonts/ubuntu.fnt" type="BitmapFont" id=3]
+
+[node name="Result" type="Node"]
+
+script/script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+transform/pos = Vector2( 261, 200 )
+texture = ExtResource( 2 )
+
+[node name="MenuReturn" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 179.0
+margin/top = 300.0
+margin/right = 250.0
+margin/bottom = 333.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Menu"
+flat = false
+
+[node name="PlayAgain" type="Button" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 272.0
+margin/top = 300.0
+margin/right = 343.0
+margin/bottom = 333.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Again"
+flat = false
+
+[node name="Result" type="Label" parent="."]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 181.0
+margin/top = 242.0
+margin/right = 343.0
+margin/bottom = 281.0
+custom_fonts/font = ExtResource( 3 )
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+

@@ -1,0 +1,159 @@
+[gd_scene load_steps=7 format=1]
+
+[ext_resource path="res://Scene.gd" type="Script" id=1]
+[ext_resource path="res://PNG/title.png" type="Texture" id=2]
+[ext_resource path="res://Sounds/button.wav" type="Sample" id=3]
+[ext_resource path="res://Sounds/cardPlace1.wav" type="Sample" id=4]
+[ext_resource path="res://Sounds/cardShove3.wav" type="Sample" id=5]
+
+[sub_resource type="SampleLibrary" id=1]
+
+samples/button = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 3 )
+}
+samples/cardPlace1 = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 4 )
+}
+samples/cardShove3 = {
+"db": 0.0,
+"pitch": 1.0,
+"priority": 0,
+"sample": ExtResource( 5 )
+}
+
+[node name="Scene" type="Node"]
+
+script/script = ExtResource( 1 )
+
+[node name="Menu" type="Control" parent="."]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 0.0
+margin/top = 0.0
+margin/right = 40.0
+margin/bottom = 40.0
+
+[node name="Host" type="Button" parent="Menu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 159.0
+margin/top = 235.0
+margin/right = 370.0
+margin/bottom = 291.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Host"
+flat = false
+
+[node name="Connect" type="Button" parent="Menu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 159.0
+margin/top = 389.0
+margin/right = 370.0
+margin/bottom = 445.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "Connect"
+flat = false
+
+[node name="IP" type="LineEdit" parent="Menu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 159.0
+margin/top = 355.0
+margin/right = 370.0
+margin/bottom = 379.0
+placeholder/alpha = 0.6
+focus_mode = 2
+caret/caret_blink = false
+caret/caret_blink_speed = 0.65
+
+[node name="StatusLabel" type="Label" parent="Menu"]
+
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 159.0
+margin/top = 318.0
+margin/right = 370.0
+margin/bottom = 332.0
+text = "DEFAULT"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="HostIP" type="Label" parent="Menu"]
+
+visibility/visible = false
+focus/ignore_mouse = true
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 0
+margin/left = 406.0
+margin/top = 98.0
+margin/right = 617.0
+margin/bottom = 112.0
+text = "DEFAULT"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="CancelConnect" type="Button" parent="Menu"]
+
+focus/ignore_mouse = false
+focus/stop_mouse = true
+size_flags/horizontal = 2
+size_flags/vertical = 2
+margin/left = 347.0
+margin/top = 315.0
+margin/right = 370.0
+margin/bottom = 335.0
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+text = "X"
+flat = false
+
+[node name="Title" type="Sprite" parent="Menu"]
+
+transform/pos = Vector2( 265, 149 )
+texture = ExtResource( 2 )
+
+[node name="SamplePlayer2D" type="SamplePlayer2D" parent="Menu"]
+
+params/volume_db = 0.0
+params/pitch_scale = 1.0
+params/attenuation/min_distance = 1.0
+params/attenuation/max_distance = 2048.0
+params/attenuation/distance_exp = 1.0
+config/polyphony = 1
+config/samples = SubResource( 1 )
+config/pitch_random = 0.0
+
+

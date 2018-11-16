@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/cardShove3.wav-186b361752ac5f36e72b5c4ba4a9dd23.sample"
+
+[deps]
+
+source_file="res://Sounds/cardShove3.wav"
+source_md5="2d9f2c487172d017187c98f8ea4b9e37"
+
+dest_files=[ "res://.import/cardShove3.wav-186b361752ac5f36e72b5c4ba4a9dd23.sample" ]
+dest_md5="ff03bdaa9fce36aa3015680af928c18c"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
