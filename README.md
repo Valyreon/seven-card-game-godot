@@ -14,3 +14,9 @@ You can find the rules for this card game described [here](https://www.pagat.com
 ### Acknowledgments
 ---
 Because I developed this project a while ago, I don't have the sources for the images in this game. They were all downloaded from open-source sites. I did not make any images featured in this game! I will try to locate some of the sources.
+
+### Screenshots
+---
+| | | |
+|:-------------------------:|:-------------------------:|:-------------------------:|
+|<img width="1604" alt="screenshot 1" src="https://raw.githubusercontent.com/Valyreon/seven-card-game-godot/master/sevenScreen3.PNG">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://raw.githubusercontent.com/Valyreon/seven-card-game-godot/master/sevenScreen1.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://raw.githubusercontent.com/Valyreon/seven-card-game-godot/master/sevenScreen2.png">|
